@@ -1,0 +1,48 @@
+#
+# This source file is part of the Anonymous Template Application project
+#
+# SPDX-FileCopyrightText: 2023 The Authors
+#
+# SPDX-License-Identifier: MIT
+#
+
+# Swift Package Manager
+.swiftpm
+.derivedData
+.build
+
+# IDE related folders
+.idea
+
+# Xcode
+xcuserdata/
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Other files
+.DS_Store
+.env
+
+# Tests
+report.junit
+report.html
+*.xcresult
+
+# Local ML artifacts
+checkpoints/
+data/
+PocketTSLM/Supporting Files/LocalLLM/model.safetensors
+PocketTSLM/Supporting Files/OpenTSLM/sleep_cot.csv
+PocketTSLM/Supporting Files/OpenTSLM/ecg_qa_cot_test.csv
+PocketTSLM/Supporting Files/OpenTSLM/ecg_qa_waveforms/
+PocketTSLM/Supporting Files/OpenTSLM/ecg_qa_template_answers.json
+PocketTSLM/Supporting Files/OpenTSLM/ecg_qa_waveforms.json
+jsons/model.safetensors
+
+# Python bytecode
+__pycache__/
+
+# Large, regenerable OpenTSLM parity fixtures (recreate with the generator scripts in
+# src-swift/Tests/OpenTSLMKitTests/). The small hand-sized fixtures are committed.
+src-swift/Tests/OpenTSLMKitTests/Fixtures/real_*.safetensors
